@@ -1,5 +1,6 @@
 main {
   margin-top: 60px;
+  margin: 0 2%;
 }
 
 main h1 {
@@ -26,4 +27,59 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: 800px) {
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3%;
+  }
+  
+  .item {
+    width: 42%;
+  }
+
+  .item-double {
+    width: 58%;
+    margin-left: 3%;
+  }
+
+  .group-secondary {
+    margin: 10% 0;
+  }
+
+  .group2-items {
+    flex: 1;
+    margin: 0 3%;
+  }
+
+  .group2-items img {
+    width: 100%;
+  }
+
+  .group3 {
+    background-color: #795b34;
+    height: 220px;
+    margin: 0 -2%;
+    margin-bottom: 10%;
+  }
+
+  .group3 img{
+    width: 21%;
+    height: 80%;
+    margin: 0 1%;
+  }
 }
